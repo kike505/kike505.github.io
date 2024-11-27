@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E3A8A; /* Fondo azul */
+    color: white;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2563EB;
+}
+
+/* Sección de artículos */
+.articulos {
+    margin: 20px;
+    padding: 10px;
+    background-color: #1D4ED8;
+    border-radius: 8px;
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #3B82F6;
+    border-radius: 8px;
+}
+
+.articulo .contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: row-reverse; /* Invertir el orden: imagen y video a la izquierda, texto a la derecha */
+}
+
+.media {
+    flex: 1;
+}
+
+.media img, .media video {
+    width: 400%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.texto {
+    flex: 2;
+    max-width: 60%;
+}
+
+.texto h3 {
+    margin-top: 0;
+}
+
+.texto p {
+    margin: 10px 0;
+}
+
+/* Estilos para la zona de registro */
+.registro {
+    background-color: #2563EB;
+    padding: 20px;
+    margin-top: 30px; /* Añadido espacio para separar de los artículos */
+    border-radius: 8px;
+}
+
+.registro h2 {
+    text-align: center;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #38bdf8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0ea5e9;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1D4ED8;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
